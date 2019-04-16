@@ -22,8 +22,7 @@ doc:
 	javadoc -d $(DOCDIR) $(SRCDIR)/*.java
 
 clean:
-	rm $(BINDIR)/*.class
-	rm -Rf doc
+	rm bin/BarrierS/*.class
 run:
 	java -cp bin BarrierS.BarrierTest 5 5
 
