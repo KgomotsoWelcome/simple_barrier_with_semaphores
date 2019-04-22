@@ -39,5 +39,8 @@ public class Barrier {
         if (counter > 0) {
             departure.release();
 	    }
+
+	    departure.release();
+	    arrival.release();
 	}
 }

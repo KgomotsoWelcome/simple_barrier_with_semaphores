@@ -1,7 +1,3 @@
-# Assignment 3 makefile
-# wlckgo001
-# 17 April 2018
-
 JAVAC=/usr/bin/javac
 .SUFFIXES: .java .class
 
@@ -18,11 +14,14 @@ CLASS_FILES=$(CLASSES:%.class=$(BINDIR)/%.class)
 
 default: $(CLASS_FILES)
 
-doc:
-	javadoc -d $(DOCDIR) $(SRCDIR)/*.java
-
 clean:
 	rm bin/BarrierS/*.class
 run:
 	java -cp bin BarrierS.BarrierTest 5 5
+
+run1:
+	java -cp bin BarrierS.BarrierTest 5 8
+
+run2:
+	java -cp bin BarrierS.BarrierTest 4 5
 
